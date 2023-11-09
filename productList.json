@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"title": "pantalonJS",
+		"description": "pantalon de jean largo",
+		"price": "15500",
+		"thumbnail": "sin imagen",
+		"code": "5000",
+		"stock": "10"
+	},
+	{
+		"id": 2,
+		"title": "Remera MC",
+		"description": "Remera mangas cortas",
+		"price": "5700",
+		"thumbnail": "sin imagen",
+		"code": "5323",
+		"stock": "7"
+	},
+	{
+		"id": 3,
+		"title": "Musculosa",
+		"description": "musculosa amarilla",
+		"price": "9700",
+		"thumbnail": "sin imagen",
+		"code": "5501",
+		"stock": "20"
+	},
+	{
+		"id": 4,
+		"title": "top",
+		"description": "top liso",
+		"price": "6700",
+		"thumbnail": "sin imagen",
+		"code": "55010411",
+		"stock": "20"
+	},
+	{
+		"id": 5,
+		"title": "vestido de playa",
+		"description": "vestido de playa blanco",
+		"price": "8700",
+		"thumbnail": "sin imagen",
+		"code": "3107",
+		"stock": "20"
+	},
+	{
+		"id": 6,
+		"title": "Musculosa deportiva",
+		"description": "musculosa deportiva blanca",
+		"price": "7500",
+		"thumbnail": "sin imagen",
+		"code": "2806",
+		"stock": "20"
+	},
+	{
+		"id": 7,
+		"title": "short",
+		"description": "short de playa rojo",
+		"price": "7700",
+		"thumbnail": "sin imagen",
+		"code": "0304",
+		"stock": "20"
+	},
+	{
+		"id": 8,
+		"title": "short deportivo",
+		"description": "short deportivo blanco",
+		"price": "8700",
+		"thumbnail": "sin imagen",
+		"code": "0303",
+		"stock": "20"
+	},
+	{
+		"id": 9,
+		"title": "calza",
+		"description": "calza deportiva negra",
+		"price": "9700",
+		"thumbnail": "sin imagen",
+		"code": "1706",
+		"stock": "20"
+	},
+	{
+		"id": 10,
+		"title": "ojotas",
+		"description": "ojostas de goma",
+		"price": "10700",
+		"thumbnail": "sin imagen",
+		"code": "2408",
+		"stock": "20"
+	}
+]
