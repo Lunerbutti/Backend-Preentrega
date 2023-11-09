@@ -1,6 +1,6 @@
 // Importacion de clases y require
 const express= require('express')
-const ProductManager = require('./ProductManager.js')
+const ProductManager = require('./Classes/ProductManager.js')
 // const path = require("path")
 
 
@@ -14,7 +14,7 @@ const server =app.listen(PORT, ()=>{
     console.log(`server escuchando ${PORT}`)
 })
 
-const pm = new ProductManager('./productList.json')
+const pm = new ProductManager('./Archivo/productList.json')
 const products = pm.getProduct()
 
 //PAGINA PRINCIPAL
