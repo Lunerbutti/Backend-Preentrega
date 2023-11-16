@@ -3,7 +3,7 @@ const path = require('path');
 
 class CartsManager {
     constructor() {
-        this.filePath = path.join(__dirname, '..', 'files', 'carts.json');
+        this.filePath = path.join(__dirname, '..', 'Archivo', 'carts.json');
     }
 
     async initializeCartFile() {
@@ -42,7 +42,7 @@ class CartsManager {
         const cart = carts.find(cart => cart.id === cartId);
         if (cart) {
             const products = await Promise.all(cart.products.map(async product => {
-                const productData = await fs.readFile(path.join(__dirname, '..', 'files', 'productsList.json'), 'utf8');
+                const productData = await fs.readFile(path.join(__dirname, '..', 'Archivo', 'productsList.json'), 'utf8');
                 const products = JSON.parse(productData);
                 const productObj = products.find(p => p.id === product.id);
                 return { ...product, ...productObj };
@@ -58,7 +58,7 @@ class CartsManager {
             const data = JSON.stringify(carts, null, 2);
             await fs.writeFile(this.filePath, data);
         } catch (error) {
-            console.error('Saveing ERROR:', error.message);
+            console.error('Saving ERROR:', error.message);
         }
     }
 
@@ -71,7 +71,7 @@ class CartsManager {
             }
             return JSON.parse(data);
         } catch (error) {
-            console.error('Can´t reed the cart from JSON', error.message);
+            console.error('Cant reed the cart from JSON', error.message);
             return [];
         }
     }
@@ -87,7 +87,7 @@ class CartsManager {
     
             const cart = carts[cartIndex];
     
-            const productData = await fs.readFile(path.join(__dirname, '..', 'files', 'productList.json'), 'utf8');
+            const productData = await fs.readFile(path.join(__dirname, '..', 'Archivo', 'productList.json'), 'utf8');
             const products = JSON.parse(productData);
             const productIndex = products.findIndex(p => p.id === productId);
     
